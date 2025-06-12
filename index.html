@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Elegant Weddings</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Palette alternata per titoli -->
   <style>
     .text-red { color: #9f1617; }
     .text-green { color: #4e7441; }
@@ -22,7 +21,7 @@
           <li><a href="docs/schedule.pdf" target="_blank">Wedding Day Schedule</a></li>
           <li><a href="#gallery">Photo Gallery</a></li>
           <li><a href="#venue">Venue &amp; Directions</a></li>
-          <li><a href="#rsvp">RSVP &amp; Registry</a></li>
+          <li><a href="#rsvp">RSVP &amp; Honeymoon</a></li>
         </ul>
       </nav>
       <a href="#rsvp" class="btn btn-primary">Prenota Ora</a>
@@ -40,7 +39,7 @@
         <p>With hearts full of joy, we, [Nome Sposa] and [Nome Sposo], invite you to share in the magic of our winter wedding. Join us as we begin our journey together.</p>
         <div class="hero-buttons">
           <a href="#story" class="btn btn-outline">Our Story</a>
-          <a href="docs/schedule.pdf" class="btn btn-outline" target="_blank">Schedule PDF</a>
+          <!-- Schedule PDF removed from hero -->
         </div>
       </div>
     </div>
@@ -54,8 +53,6 @@
       <div class="story-image">
         <img src="images/story.jpg" alt="Love Story" />
       </div>
-
-      <!-- SEZIONE VIDEO -->
       <h2 class="text-red">Si è successo davvero</h2>
       <p>E abbiamo il videoooo!!!!!</p>
       <div class="story-video">
@@ -76,7 +73,7 @@
         <img src="images/1.jpg" alt="" />
         <img src="images/2.jpg" alt="" />
         <img src="images/3.jpg" alt="" />
-        <img src="images/4.jpg" alt="" />
+        <img src="images/4.jpg" alt="`" />
         <img src="images/5.jpg" alt="" />
         <img src="images/6.jpg" alt="" />
       </div>
@@ -112,32 +109,33 @@
     </div>
   </section>
 
-  <!-- RSVP & REGISTRY -->
+  <!-- RSVP & HONEYMOON -->
   <section id="rsvp" class="section" style="background-color: #4e7441;">
     <div class="container">
       <h2 style="color: #000;">Confirm Your Attendance</h2>
       <p>Please let us know if you'll be able to join us by filling out the RSVP form below.</p>
       <a href="#contact" class="btn btn-primary">RSVP Now</a>
-      <h2 style="margin-top: 3rem;">Wedding Registry</h2>
-      <ul class="registry-list">
-        <li>🎁 Amazon</li>
-        <li>🎁 Target</li>
-        <li>🎁 Etsy</li>
-      </ul>
+      
+      <!-- Luna di miele -->
+      <h2 class="text-red" style="margin-top: 3rem;">Luna di miele</h2>
+      <p>ogni viaggio inizia con un passo...</p>
+      <a href="docs/schedule.pdf" class="btn btn-outline" target="_blank">Schedule PDF</a>
     </div>
   </section>
 
   <!-- CONTACT FORM -->
-  <section id="contact" class="section dark-bg">
+  <section id="contact" class="section" style="background-color: #4e7441; color: #fff;">
     <div class="container">
-      <h2>Contattaci</h2>
+      <h2>Non vediamo l'ora di vederti!</h2>
       <p>Per domande o richieste, contattaci tramite il modulo sottostante.</p>
       <form action="https://formspree.io/f/tuo-endpoint" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Enter your name" required />
-        <input type="email" name="email" placeholder="Enter your email" required />
-        <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+        <input type="text" name="name" placeholder="Nome e Cognome" required />
+        <input type="number" name="people" placeholder="Per quante persone stai confermando" required />
+        <textarea name="names" rows="2" placeholder="Inserisci qui Nome e cognome di tutte le persone per le quali stai confermando" required></textarea>
+        <textarea name="allergies" rows="2" placeholder="Hai eventuali allergie o intolleranze? se sì, scrivici quali"></textarea>
         <button type="submit" class="btn btn-primary">Invia</button>
       </form>
+      <p style="margin-top:1rem; text-align:center;">Conferma la tua partecipazione entro il 31 luglio 2025!</p>
     </div>
   </section>
 
