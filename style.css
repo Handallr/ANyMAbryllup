@@ -198,3 +198,36 @@ body {
   .nav-links { display: none; }
   /* qui potresti aggiungere un hamburger menu se vuoi */ 
 }
+
+
+/* =============================
+   CENTRATURA E SPAZIATURA STORY
+   ============================= */
+#story .container {
+  text-align: center;
+}
+#story h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+#story p {
+  margin-bottom: 2rem;
+}
+.story-image,
+.story-video {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+.story-video video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: var(--radius);
+}
+
+/* =============================
+   CENTRATURA GALLERY
+   ============================= */
+#gallery .container {
+  text-align: center;
+}
