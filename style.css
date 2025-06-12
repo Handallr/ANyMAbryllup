@@ -199,7 +199,6 @@ body {
   /* qui potresti aggiungere un hamburger menu se vuoi */ 
 }
 
-
 /* =============================
    CENTRATURA E SPAZIATURA STORY
    ============================= */
@@ -230,4 +229,40 @@ body {
    ============================= */
 #gallery .container {
   text-align: center;
+}
+
+/* =============================
+   SPAZIATURA LUNA DI MIELE
+   ============================= */
+#rsvp .container {
+  text-align: center;
+}
+#rsvp h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+#rsvp p {
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+#rsvp .btn-primary {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+}
+
+/* =============================
+   SPAZIATURA CONTACT FORM
+   ============================= */
+#contact .container {
+  text-align: center;
+}
+#contact h2 {
+  margin-bottom: 1rem;
+}
+#contact p {
+  margin-bottom: 2rem;
+}
+#contact .contact-form {
+  gap: 1.5rem;
 }
