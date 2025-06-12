@@ -261,7 +261,14 @@ body {
    SPAZIATURA CONTACT FORM
    ============================= */
 #contact .container {
+  /* Mantiene centrato il form, i titoli e paragrafi saranno allineati a sinistra */
   text-align: center;
+}
+/* Allinea a sinistra titolo e paragrafo iniziale in Contact Form */
+#contact h2,
+#contact > .container > p {
+  text-align: left;
+  margin-left: 0;
 }
 #contact h2 {
   margin-bottom: 1rem;
