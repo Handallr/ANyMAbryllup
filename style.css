@@ -163,7 +163,6 @@ body {
 
 /* 9) RSVP & HONEYMOON */
 #rsvp .container {
-  /* Allinea tutto a sinistra */
   text-align: left;
 }
 #rsvp h2 {
@@ -210,16 +209,20 @@ body {
   .hero-grid, .venue-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 600px) {
-  /* Navbar mobile: nasconde menu ma tiene logo e bottone leggibili */
-  .nav-links { display: none; }
-  .logo {
-    font-size: 1.8rem;
-    padding-left: 1rem;
+  .navbar .container {
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    flex-direction: row;
+    align-items: center;
   }
-  .navbar .btn-primary {
-    padding: 1rem 1.5rem;
-    margin-right: 1rem;
-    font-size: 1rem;
+
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .btn-primary {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
   }
 
   .hero-grid,
@@ -227,6 +230,7 @@ body {
   .gallery-grid {
     grid-template-columns: 1fr !important;
   }
+
   .container { width: 95%; }
   .section { padding: 2rem 0; }
   h1 { font-size: 1.8rem; }
