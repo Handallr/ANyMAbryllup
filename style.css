@@ -1,0 +1,200 @@
+/* style.css */
+/* 1) RESET & VARS */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --primary: #8e162c;
+  --white: #fff;
+  --black: #111;
+  --gray: #666;
+  --radius: 16px;
+  --transition: 0.3s ease;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--black);
+}
+
+/* 2) UTILITIES */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section {
+  padding: 4rem 0;
+}
+.light-bg { background: var(--white); }
+.dark-bg {
+  background: var(--black);
+  color: var(--white);
+}
+
+/* 3) NAVBAR */
+.navbar {
+  background: var(--white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0; z-index: 100;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--black);
+  text-decoration: none;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+  transition: color var(--transition);
+}
+.nav-links a:hover { color: var(--primary); }
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background var(--transition), color var(--transition);
+}
+.btn-primary {
+  background: var(--primary);
+  color: var(--white);
+}
+.btn-primary:hover { opacity: 0.9; }
+.btn-outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+.btn-outline:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* 4) HERO */
+.hero-section { padding: 6rem 0; }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+.hero-image img {
+  width: 100%;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-text p { margin-bottom: 2rem; }
+
+/* 5) STORY */
+#story h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.story-image img {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-top: 2rem;
+}
+
+/* 6) GALLERY */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.gallery-grid img {
+  width: 100%;
+  border-radius: var(--radius);
+  height: 200px;
+  object-fit: cover;
+}
+
+/* 7) ACCORDION */
+.accordion details {
+  border-top: 1px solid var(--gray);
+  padding: 1rem 0;
+}
+.accordion summary {
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+}
+.accordion summary::-webkit-details-marker { display: none; }
+.accordion summary::after {
+  content: '▾';
+  float: right;
+  transition: transform var(--transition);
+}
+.accordion details[open] summary::after {
+  transform: rotate(180deg);
+}
+.accordion p { margin-top: 0.5rem; color: var(--gray); }
+
+/* 8) VENUE */
+.venue-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.venue-map img {
+  width: 100%;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+/* 9) RSVP & REGISTRY */
+#rsvp .registry-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+.registry-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* 10) CONTACT FORM */
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 600px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  border: none;
+  outline: none;
+}
+.contact-form button {
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+/* 11) RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-grid, .venue-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .nav-links { display: none; }
+  /* qui potresti aggiungere un hamburger menu se vuoi */ 
+}
