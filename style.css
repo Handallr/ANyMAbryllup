@@ -237,6 +237,13 @@ body {
 #rsvp .container {
   text-align: center;
 }
+
+/* Allinea a sinistra il titolo e il paragrafo di Luna di miele */
+#rsvp h2,
+#rsvp p {
+  text-align: left;
+  margin-left: 0;
+}
 #rsvp .btn-primary {
   margin-top: 2rem;
   padding: 1rem 2.5rem;
