@@ -249,4 +249,13 @@ body {
     text-align: left;
     padding: 0 1rem;
   }
+
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .nav-links li:not(:nth-child(2)):not(:last-child) {
+    display: none;
+  }
 }
