@@ -237,10 +237,9 @@ body {
 #rsvp .container {
   text-align: center;
 }
-#rsvp h2 {
-  margin-top: 2.5rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
+#rsvp .btn-primary {
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
 }
 #rsvp p {
   margin-bottom: 2rem;
