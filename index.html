@@ -1,112 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elegant Weddings</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="container navbar-simplified">
-        <div class="logo">Elegant Weddings</div>
-        <a href="#rsvp" class="btn btn-primary">Conferma la tua presenza</a>
-      </div>
-    </nav>
+<html lang="it">
 
-    <!-- HERO SECTION -->
-    <header class="hero-section">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <h1>Celebrate Our Winter Wedding</h1>
-          <p>Join us in a magical celebration of love and unity.</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elegant Wedding</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR RIDOTTA -->
+  <nav class="navbar">
+    <div class="container navbar-slim">
+      <span class="logo">Elegant Weddings</span>
+      <a href="#contact" class="btn btn-primary">Conferma la tua presenza</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Celebrate Our Winter Wedding</h1>
+        <p>Join us in a magical celebration filled with love, joy, and unforgettable memories.</p>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero.jpg" alt="Hero" />
+      </div>
+    </div>
+  </header>
+
+  <!-- OUR STORY -->
+  <section id="story" class="section light-bg">
+    <div class="container">
+      <h2 style="color: #9f1617">Our Love Story</h2>
+      <p>Discover the beautiful journey of how we met, fell in love, and decided to unite our lives forever. Our story is filled with special moments...</p>
+      <div class="story-image">
+        <img src="images/story.jpg" alt="Love Story" />
+      </div>
+
+      <h2 style="color: #4e7441">Si è successo davvero</h2>
+      <p>E abbiamo il videoooo!!!!!</p>
+      <div class="story-video">
+        <video controls>
+          <source src="videos/happening.mp4" type="video/mp4" />
+          Il tuo browser non supporta il video.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2 style="color: #9f1617">Memorable Moments</h2>
+      <p>Relive our special moments through this curated collection of photos.</p>
+      <div class="gallery-grid">
+        <img src="images/1.jpg" alt="" />
+        <img src="images/2.jpg" alt="" />
+        <img src="images/3.jpg" alt="" />
+        <img src="images/4.jpg" alt="" />
+        <img src="images/5.jpg" alt="" />
+        <img src="images/6.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- WEDDING DAY SCHEDULE -->
+  <section id="schedule" class="section light-bg">
+    <div class="container">
+      <h2 style="color: #4e7441">Wedding Day Schedule</h2>
+      <p>Discover the timing of our unforgettable day.</p>
+      <div class="accordion">
+        <details>
+          <summary>Ore 11:00 - Cerimonia</summary>
+          <p>Presso la chiesa di San Michele.</p>
+        </details>
+        <details>
+          <summary>Ore 13:00 - Pranzo</summary>
+          <p>Presso Villa delle Rose.</p>
+        </details>
+        <details>
+          <summary>Ore 18:00 - Festa</summary>
+          <p>Musica, balli e tanto divertimento!</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- VENUE -->
+  <section id="venue" class="section">
+    <div class="container">
+      <h2 style="color: #9f1617">Wedding Venue</h2>
+      <p>Come raggiungerci e vivere insieme il grande giorno.</p>
+      <div class="venue-grid">
+        <div>
+          <h3>Villa delle Rose</h3>
+          <p>Via dei Fiori, 25 - Roma</p>
         </div>
-        <div class="hero-image">
-          <img src="images/hero.jpg" alt="Couple" />
+        <div class="venue-map">
+          <img src="images/map.jpg" alt="Map" />
         </div>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <!-- OUR STORY -->
-    <section id="story" class="section light-bg">
-      <div class="container">
-        <h2>Our Love Story</h2>
-        <p>
-          Discover the beautiful journey of how we met, fell in love, and decided
-          to unite their lives forever. Their story is filled with special moments...
-        </p>
-        <div class="story-image">
-          <img src="images/story.jpg" alt="Love Story" />
-        </div>
+  <!-- RSVP & HONEYMOON -->
+  <section id="rsvp" class="section light-bg">
+    <div class="container">
+      <h2 style="color: white; text-align: left">Luna di miele</h2>
+      <p style="color: white; text-align: left">ogni viaggio inizia con un passo...</p>
+      <a href="pdf/schedule.pdf" class="btn btn-primary honeymoon-pdf">Schedule PDF</a>
+    </div>
+  </section>
 
-        <!-- SEZIONE VIDEO -->
-        <h2>Si è successo davvero</h2>
-        <p>E abbiamo il videoooo!!!!!</p>
-        <div class="story-video">
-          <video controls>
-            <source src="videos/happening.mp4" type="video/mp4" />
-            Il tuo browser non supporta il video.
-          </video>
-        </div>
-      </div>
-    </section>
+  <!-- CONTACT FORM -->
+  <section id="contact" class="section dark-bg">
+    <div class="container">
+      <h2>Non vediamo l'ora di vederti!</h2>
+      <p>Conferma la tua partecipazione entro il 31 luglio 2025!</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Nome e Cognome" required />
+        <input type="number" placeholder="Per quante persone stai confermando" required />
+        <textarea placeholder="Inserisci qui Nome e cognome di tutte le persone per le quali stai confermando"></textarea>
+        <textarea placeholder="Hai eventuali allergie o intolleranze? se si, scrivici quali"></textarea>
+        <button class="btn btn-primary" type="submit">Conferma</button>
+      </form>
+    </div>
+  </section>
+</body>
 
-    <!-- PHOTO GALLERY -->
-    <section id="gallery" class="section">
-      <div class="container">
-        <h2>Memorable Moments</h2>
-        <p>Relive our special moments through this curated collection of photos.</p>
-        <div class="gallery-grid">
-          <img src="images/1.jpg" alt="" />
-          <img src="images/2.jpg" alt="" />
-          <img src="images/3.jpg" alt="" />
-          <img src="images/4.jpg" alt="" />
-          <img src="images/5.jpg" alt="" />
-          <img src="images/6.jpg" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <!-- VENUE -->
-    <section id="venue" class="section light-bg">
-      <div class="container">
-        <h2>Wedding Venue</h2>
-        <p>Our special day will take place at the enchanting Winter Garden Hall.</p>
-        <div class="venue-grid">
-          <div class="venue-map">
-            <img src="images/venue.jpg" alt="Venue" />
-          </div>
-          <div class="venue-info">
-            <p>123 Snowflake Lane, Frostville, Wonderland</p>
-            <p>Ceremony starts at 4:00 PM followed by dinner and dancing</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- RSVP & HONEYMOON -->
-    <section id="rsvp" class="section dark-bg">
-      <div class="container">
-        <h2 class="honeymoon-title">Luna di miele</h2>
-        <p class="honeymoon-sub">Ogni viaggio inizia con un passo...</p>
-        <a href="schedule.pdf" class="btn btn-primary">Schedule PDF</a>
-      </div>
-    </section>
-
-    <!-- CONTACT FORM -->
-    <section id="contact" class="section dark-bg">
-      <div class="container">
-        <h2 class="contact-title">Non vediamo l'ora di vederti!</h2>
-        <p class="contact-sub">Conferma la tua partecipazione entro il 31 luglio 2025!</p>
-        <form class="contact-form">
-          <input type="text" placeholder="Nome e Cognome" required />
-          <input type="text" placeholder="Per quante persone stai confermando" required />
-          <textarea placeholder="Inserisci qui Nome e cognome di tutte le persone per le quali stai confermando" required></textarea>
-          <textarea placeholder="Hai eventuali allergie o intolleranze? Se sì, scrivici quali."></textarea>
-          <button class="btn btn-primary" type="submit">Invia Conferma</button>
-        </form>
-      </div>
-    </section>
-  </body>
 </html>
