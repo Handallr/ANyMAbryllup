@@ -150,7 +150,13 @@ body {
 .accordion details[open] summary::after {
   transform: rotate(180deg);
 }
-.accordion p { margin-top: 0.5rem; color: var(--gray); }
+.accordion p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; /* aggiunto per distanziare anche sotto */
+  color: var(--gray);
+  line-height: 1.6; /* migliora leggibilità */
+}
+
 
 /* 8) VENUE */
 .venue-grid {
