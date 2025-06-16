@@ -133,28 +133,39 @@ body {
 /* 7) ACCORDION */
 .accordion details {
   border-top: 1px solid var(--gray);
-  padding: 1rem 0;
+  padding: 1.5rem 0; /* aumentato leggermente per dare respiro */
 }
+
 .accordion summary {
   font-weight: bold;
   cursor: pointer;
   list-style: none;
   outline: none;
+  font-size: 1.1rem;
+  color: var(--black);
 }
-.accordion summary::-webkit-details-marker { display: none; }
+
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
 .accordion summary::after {
   content: '▾';
   float: right;
   transition: transform var(--transition);
+  font-size: 1.2rem;
+  color: var(--primary);
 }
+
 .accordion details[open] summary::after {
   transform: rotate(180deg);
 }
+
 .accordion p {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem; /* aggiunto per distanziare anche sotto */
+  margin: 0.75rem 0; /* margine top e bottom migliorato */
   color: var(--gray);
-  line-height: 1.6; /* migliora leggibilità */
+  line-height: 1.7;
+  font-size: 1rem;
 }
 
 
