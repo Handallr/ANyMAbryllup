@@ -15,7 +15,12 @@ body {
   line-height: 1.6;
   color: var(--black);
   background-color: var(--white);
+  background-image: url('images/decorazioni-natale.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 100px auto;
 }
+
 
 /* 2) UTILITIES */
 .container {
