@@ -133,7 +133,7 @@ body {
 /* 7) ACCORDION */
 .accordion details {
   border-top: 1px solid var(--gray);
-  padding: 1.5rem 0; /* aumentato leggermente per dare respiro */
+  padding: 1.75rem 0; /* leggermente aumentato per separare meglio le sezioni */
 }
 
 .accordion summary {
@@ -141,7 +141,7 @@ body {
   cursor: pointer;
   list-style: none;
   outline: none;
-  font-size: 1.1rem;
+  font-size: 1.15rem;       /* leggermente più grande */
   color: var(--black);
 }
 
@@ -153,7 +153,7 @@ body {
   content: '▾';
   float: right;
   transition: transform var(--transition);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--primary);
 }
 
@@ -162,10 +162,14 @@ body {
 }
 
 .accordion p {
-  margin: 0.75rem 0; /* margine top e bottom migliorato */
+  margin: 1rem 0;             /* aumenta lo spazio sopra e sotto */
   color: var(--gray);
-  line-height: 1.7;
-  font-size: 1rem;
+  line-height: 1.8;           /* migliora la leggibilità del testo */
+  font-size: 1.05rem;
+}
+
+.accordion p + p {
+  margin-top: 1.25rem;        /* ulteriore margine tra paragrafi consecutivi */
 }
 
 
