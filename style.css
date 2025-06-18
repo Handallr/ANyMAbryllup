@@ -123,12 +123,14 @@ body {
   gap: 1.5rem;
   margin-top: 2rem;
 }
+
 .gallery-grid img {
   width: 100%;
+  height: 250px;              /* aumentato da 200px a 250px */
+  object-fit: cover;          /* mantiene il ritaglio elegante */
   border-radius: var(--radius);
-  height: 200px;
-  object-fit: cover;
 }
+
 
 /* 7) ACCORDION */
 .accordion details {
