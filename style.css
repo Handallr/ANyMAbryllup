@@ -126,10 +126,18 @@ body {
 
 .gallery-grid img {
   width: 100%;
-  height: 250px;              /* aumentato da 200px a 250px */
-  object-fit: cover;          /* mantiene il ritaglio elegante */
+  height: 250px;              /* Altezza aumentata ovunque */
+  object-fit: cover;
   border-radius: var(--radius);
 }
+
+/* Override mobile, se presente */
+@media (max-width: 600px) {
+  .gallery-grid img {
+    height: 250px !important; /* Forza anche su mobile */
+  }
+}
+
 
 
 /* 7) ACCORDION */
