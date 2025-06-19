@@ -69,14 +69,13 @@ body {
   text-decoration: none;
   transition: background var(--transition), color var(--transition);
 }
-.btn-crema {
+
+.btn-primary {
   background: var(--primary);
-  color: var(--verde);
-  border: 1px solid var(--black);
+  color: var(--white);
 }
-.btn-crema:hover {
-  opacity: 0.9;
-}
+.btn-primary:hover { opacity: 0.9; }
+
 
 
 /* 4) HERO */
