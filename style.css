@@ -61,14 +61,17 @@ body {
 }
 .nav-links {
   display: none; /* nascosto definitivamente */
-}
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border-radius: var(--radius);
   text-decoration: none;
   transition: background var(--transition), color var(--transition);
+  font-weight: bold;
+  border: none;
 }
+
+/* PULSANTE CREMA (usato per schedule pdf e modulo) */
 .btn-crema {
   background: var(--crema);
   color: var(--verde);
@@ -76,6 +79,15 @@ body {
 }
 .btn-crema:hover {
   opacity: 0.9;
+}
+
+/* PULSANTE ORIGINALE (conferma la tua presenza) */
+.btn-primary {
+  background: var(--primary);
+  color: var(--white);
+}
+.btn-primary:hover {
+  opacity: 0.85;
 }
 
 
