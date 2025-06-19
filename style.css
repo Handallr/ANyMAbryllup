@@ -6,8 +6,6 @@
   --white: #f9f5f2;
   --black: #111;
   --gray: #666;
-  --crema: #f9f5f2;
-  --verde: #638059;
   --radius: 16px;
   --transition: 0.3s ease;
 }
@@ -69,14 +67,11 @@ body {
   text-decoration: none;
   transition: background var(--transition), color var(--transition);
 }
-
 .btn-primary {
   background: var(--primary);
   color: var(--white);
 }
 .btn-primary:hover { opacity: 0.9; }
-
-
 
 /* 4) HERO */
 .hero-section { padding: 6rem 0; }
