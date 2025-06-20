@@ -139,7 +139,7 @@ body {
 
 .gallery-grid img {
   width: 100%;
-  height: 460px;              /* da 250 → 280 */
+  height: 600px;              /* da 250 → 280 */
   object-fit: cover;
   border-radius: var(--radius);
 }
@@ -147,7 +147,7 @@ body {
 /* Override mobile */
 @media (max-width: 600px) {
   .gallery-grid img {
-    height: 460px !important;
+    height: 600px !important;
   }
 
 
