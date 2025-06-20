@@ -139,7 +139,7 @@ body {
 
 .gallery-grid img {
   width: 100%;
-  height: 280px;              /* da 250 → 280 */
+  height: 320px;              /* da 250 → 280 */
   object-fit: cover;
   border-radius: var(--radius);
 }
