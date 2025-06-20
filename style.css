@@ -145,7 +145,7 @@ body {
 }
 
 /* Override mobile */
-@media (max-width: 600px) {
+@media (max-width: 520px) {
   .gallery-grid img {
     height: 520px !important;
   }
