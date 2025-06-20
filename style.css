@@ -139,13 +139,13 @@ body {
 
 .gallery-grid img {
   width: 100%;
-  height: 520px;              /* da 250 → 280 */
+  height: 460px;              /* da 250 → 280 */
   object-fit: cover;
   border-radius: var(--radius);
 }
 
 /* Override mobile */
-@media (max-width: 520px) {
+@media (max-width: 460px) {
   .gallery-grid img {
     height: 420px !important;
   }
