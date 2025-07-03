@@ -1,5 +1,21 @@
 /* style.css */
 /* 1) RESET & VARS */
+@font-face {
+  font-family: 'Bellefair';
+  src: url('fonts/Bellefair-Regular.woff2') format('woff2'),
+       url('fonts/Bellefair-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Homemade Apple';
+  src: url('fonts/HomemadeApple-Regular.woff2') format('woff2'),
+       url('fonts/HomemadeApple-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
   --primary: #8e162c;
@@ -9,9 +25,10 @@
   --radius: 16px;
   --transition: 0.3s ease;
 }
+
 html { scroll-behavior: smooth; }
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Bellefair', serif;
   line-height: 1.6;
   color: var(--black);
   background-color: var(--white);
@@ -21,6 +38,9 @@ body {
   background-size: 100px auto;
 }
 
+h1, h2, h3 {
+  font-family: 'Homemade Apple', cursive;
+}
 
 /* 2) UTILITIES */
 .container {
