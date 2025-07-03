@@ -313,4 +313,26 @@ h1, h2, h3 {
   .nav-links {
     display: none !important;
   }
+
+/* Pulsanti personalizzati */
+.btn-verde {
+  background-color: #638059; /* verde */
+  color: white;
+  border: none;
+}
+
+.btn-verde:hover {
+  background-color: #51694a;
+}
+
+.btn-bianco-verde {
+  background-color: white;
+  color: #638059;
+  border: 2px solid #638059;
+}
+
+.btn-bianco-verde:hover {
+  background-color: #f0f0f0;
+}
+
 }
