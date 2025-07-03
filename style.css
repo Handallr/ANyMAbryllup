@@ -335,4 +335,19 @@ h1, h2, h3 {
   background-color: #f0f0f0;
 }
 
+.video-button {
+  display: inline-block;
+  background-color: #638059;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: var(--radius);
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background 0.3s;
+  margin-top: 1rem;
+}
+.video-button:hover {
+  background-color: #51694a;
+}
+
 }
