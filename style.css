@@ -351,7 +351,7 @@ h1, h2, h3 {
 }
 
 .index-box {
-  background-color: #fdf8f6; /* colore tenue, puoi modificarlo */
+  background-color: # #638059; /* colore tenue, puoi modificarlo */
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -362,7 +362,7 @@ h1, h2, h3 {
 .index-box h2 {
   font-family: 'Homemade Apple', cursive;
   font-size: 2rem;
-  color: #9f1617;
+  color: color: #ffffff;
   margin-bottom: 1rem;
 }
 
