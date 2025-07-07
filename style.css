@@ -377,9 +377,10 @@ h1, h2, h3 {
 
 .index-box ul li a {
   color: #ffffff;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: underline;
 }
+
 
 .index-box ul li a:hover {
   text-decoration: underline;
