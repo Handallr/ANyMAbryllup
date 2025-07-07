@@ -355,9 +355,10 @@ h1, h2, h3 {
   background-color: #638059; /* verde */
   padding: 2rem;
   border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   max-width: 600px;
   margin: 0 auto;
+  color: #ffffff;
 }
 
 .index-box h2 {
@@ -365,6 +366,7 @@ h1, h2, h3 {
   font-size: 2rem;
   color: #ffffff;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .index-box ul {
@@ -377,38 +379,12 @@ h1, h2, h3 {
 
 .index-box ul li a {
   color: #ffffff;
+  font-family: 'Homemade Apple', cursive;
   font-weight: bold;
   text-decoration: underline;
 }
-
 
 .index-box ul li a:hover {
   text-decoration: underline;
 }
 
-
-
-}
-
-
-.index-box {
-  background-color: #638059;
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin: 1rem auto;
-  color: #ffffff;
-}
-
-.index-box h2 {
-  color: #ffffff;
-  font-family: 'Homemade Apple', cursive;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.index-box ul li a {
-  color: #ffffff;
-  font-family: 'Homemade Apple', cursive;
-  text-decoration: underline;
-  font-weight: bold;
-}
