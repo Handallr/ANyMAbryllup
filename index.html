@@ -36,6 +36,19 @@
   </div>
 </section>
 
+<!-- INDICE NAVIGAZIONE -->
+<section class="section" style="text-align: center; padding: 1.5rem 0;">
+  <div class="container">
+    <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.1rem;">
+      <li><a href="#love-story">• La nostra storia d’amore</a></li>
+      <li><a href="#video">• Sì, è successo davvero</a></li>
+      <li><a href="#gallery">• Ricordi dal pensatoio</a></li>
+      <li><a href="#schedule">• Programma della giornata</a></li>
+      <li><a href="#rsvp">• Luna di miele</a></li>
+    </ul>
+  </div>
+</section>
+
 
 <!-- OUR STORY -->
 <section id="story" class="section light-bg">
@@ -112,14 +125,13 @@
     Premete play e preparate i fazzoletti o i popcorn, a seconda dell’emotività.
   </p>
 
-<div class="story-video" style="text-align: center; margin-top: 2rem;">
-  <a href="https://www.dropbox.com/scl/fi/ydyw905172t44d42qy3ga/ANyMA-wedding.mov?rlkey=0vapiukmdtpa6bgv1r44zz7et&st=uabz5bhn&dl=0" 
+<div id="video" class="story-video" style="text-align: center; margin-top: 2rem;">
+  <a href="https://www.dropbox.com/..." 
      target="_blank" 
      class="video-button">
     ▶ Accio Video!
   </a>
 </div>
-
 
 
   <!-- PHOTO GALLERY -->
@@ -212,6 +224,22 @@
   </div>
 </section>
 
+<!-- TORNA SU -->
+<a href="#hero" id="scrollTopButton" title="Torna su"
+   style="position: fixed; bottom: 20px; left: 15px; z-index: 1000; background-color: #638059; color: white; padding: 0.5rem 0.6rem; border-radius: 50%; font-size: 1.2rem; display: none; text-decoration: none;">
+  ↑
+</a>
+<script>
+  const scrollTopButton = document.getElementById("scrollTopButton");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      scrollTopButton.style.display = "block";
+    } else {
+      scrollTopButton.style.display = "none";
+    }
+  };
+</script>
 
 
 </body>
