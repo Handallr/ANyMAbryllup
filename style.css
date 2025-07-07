@@ -389,3 +389,26 @@ h1, h2, h3 {
 
 
 }
+
+
+.index-box {
+  background-color: #638059;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  color: #ffffff;
+}
+
+.index-box h2 {
+  color: #ffffff;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.index-box ul li a {
+  color: #ffffff;
+  font-family: 'Homemade Apple', cursive;
+  text-decoration: underline;
+  font-weight: bold;
+}
