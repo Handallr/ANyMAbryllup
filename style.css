@@ -350,4 +350,8 @@ h1, h2, h3 {
   background-color: #51694a;
 }
 
+.index-links a {
+  font-family: 'Homemade Apple', cursive;
+}
+
 }
